@@ -169,6 +169,11 @@ class EltwiseAccuracyLayer : public Layer<Dtype> {
   /// The label indicating that an instance should be ignored.
   int ignore_label_;
 
+  /// Whether to use only instance with given label.
+  bool has_use_label_;
+  /// The label indicating that the an instance should be used
+  int use_label_;
+
 };
 
 /**

@@ -553,6 +553,8 @@ message EltwiseAccuracyParameter {
   optional uint32 top_k = 1 [default = 1];
   // If specified, ignore instances with the given label.
   optional int32 ignore_label = 2;
+  // If specified, ignore instances without the given label.
+  optional int32 use_label = 3;
 }
 
 message RedAccuracyParameter {
